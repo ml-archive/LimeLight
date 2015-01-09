@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="translucent_gray">#66000000</color>
+    <color name="dark_green">#FF2C5144</color>
+    <color name="alternate_green">#FF467B52</color>
+    <color name="dark_gray">#FF777472</color>
+    <color name="light_gray">#FFC4BCB1</color>
+    <color name="scrubber_item_dark">#88DDDDDD</color>
+    <color name="scrubber_item_light">#88FFFFFF</color>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bg_color" type="id"/>
+    <item name="actImage" type="id"/>
+    <item name="actText" type="id"/>
+    <item name="act_view" type="id"/>
+    <item name="time_slice" type="id"/>
+</resources>

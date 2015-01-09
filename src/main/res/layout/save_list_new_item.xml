@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cancelButton"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:adjustViewBounds="true"
+            android:src="@drawable/checkmark_cross"
+            android:layout_weight="1.5"
+            android:scaleType="center"
+            android:layout_marginLeft="12dp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/new_folder"
+            android:hint="@string/new_folder_name"
+            android:id="@+id/textView"
+            android:gravity="center_vertical"
+            android:singleLine="true"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/confirmButton"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:adjustViewBounds="true"
+            android:src="@drawable/checkmark_tick"
+            android:layout_weight="1.5"
+            android:scaleType="center"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+</LinearLayout>

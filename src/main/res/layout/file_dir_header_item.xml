@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fileHeaderHolder"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#fff0f0f0">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="@android:color/black"
+        android:text="Path"
+        android:id="@+id/textView"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/divider"
+        android:src="@drawable/arrow_divider"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

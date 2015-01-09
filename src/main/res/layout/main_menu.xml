@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:id="@+id/starter_menu_container">
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:background="@color/translucent_gray"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_weight="8"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/new_book"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:src="@drawable/page_dark_new"
+            android:scaleType="centerInside"
+            style="@style/Widget.AppCompat.ActionButton"/>
+
+        <ImageButton
+            android:id="@+id/load"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:src="@drawable/dark_open"
+            android:scaleType="centerInside"
+            style="@style/Widget.AppCompat.ActionButton"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_height="55dp"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:background="@color/translucent_gray">
+        <ImageButton
+            android:id="@+id/hide_button"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/chevron_right"
+            android:scaleType="centerInside"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:background="@color/dark_green"/>
+    </FrameLayout>
+</LinearLayout>

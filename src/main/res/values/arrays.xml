@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="act_modes">
+        <item>Tutorial Mode</item>
+        <item>Hint Mode</item>
+    </string-array>
+
+    <string-array name="act_animations">
+        <item>@string/noAnimation</item>
+        <item>@string/upDownAnimation</item>
+        <item>@string/leftRightAnimation</item>
+    </string-array>
+
+    <string-array name="act_icons">
+        <item>@drawable/arrow_up</item>
+        <item>@drawable/arrow_down</item>
+        <item>@drawable/arrow_left</item>
+        <item>@drawable/arrow_right</item>
+        <item>@drawable/arrow_diag_bottom_left</item>
+        <item>@drawable/arrow_diag_bottom_right</item>
+        <item>@drawable/arrow_diag_up_left</item>
+        <item>@drawable/arrow_diag_up_right</item>
+    </string-array>
+
+    <string-array name="text_sizes">
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="transition_types">
+        <item>None</item>
+        <item>Click View</item>
+        <item>Click Menu Item</item>
+        <item>Open Drawer</item>
+        <item>Close Drawer</item>
+        <item>Click Drawer Item</item>
+        <item>Scroll</item>
+        <item>Scroll To Child</item>
+    </string-array>
+</resources>

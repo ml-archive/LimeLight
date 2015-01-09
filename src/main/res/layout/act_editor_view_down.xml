@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/topMargin"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:drawable/screen_background_dark"/>
+
+    <LinearLayout
+        android:id="@+id/buttonBar"
+        android:layout_below="@id/topMargin"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/cancel"
+            android:background="@android:color/transparent" />
+
+        <ImageButton
+            android:id="@+id/save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/save"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/light_gray"
+        android:layout_below="@id/buttonBar"
+        android:id="@+id/divider_bar"/>
+
+    <LinearLayout
+        android:id="@+id/menus"
+        android:background="@android:color/white"
+        android:layout_below="@id/divider_bar"
+        android:layout_above="@+id/arrowBar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/previous_menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/chevron_dark_left_disabled"
+            android:background="@android:color/transparent"/>
+
+        <ViewFlipper
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="8"
+            android:id="@+id/viewFlipper">
+
+            <include layout="@layout/act_contextual_menu_1" />
+            <include layout="@layout/act_contextual_menu_2" />
+            <include layout="@layout/act_contextual_menu_3" />
+            <include layout="@layout/act_contextual_menu_4" />
+
+        </ViewFlipper>
+
+        <ImageButton
+            android:id="@+id/next_menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/chevron_dark_right"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottomMargin"
+        android:layout_width="match_parent"
+        android:layout_below="@id/menus"
+        android:layout_height="3dp"
+        android:background="@android:drawable/screen_background_dark"/>
+
+    <LinearLayout
+        android:id="@+id/arrowBar"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+</RelativeLayout>

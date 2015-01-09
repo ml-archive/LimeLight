@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.12.+'
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 
+        versionName = version.replace("-SNAPSHOT", "")
+        versionCode = Integer.parseInt(versionName.replace(".", ""))
+        testInstrumentationRunner "com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:20.+'
+    compile 'com.android.support:support-v4:20.+'
+    androidTestCompile files('libs/espresso-1.1-bundled.jar')
+    androidTestCompile files('libs/TestopiaAnnotations.jar')
+}

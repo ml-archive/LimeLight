@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/actColorBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_color"
+                android:theme="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/actColorBackgroundBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/background_color"
+                android:theme="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/transparent"
+                android:id="@+id/transparentCheckBox"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="@string/text_size"
+                android:theme="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/decrease"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/decreaseTextButton"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="12dp"
+                android:id="@+id/textSizeLabel"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/increase"
+                android:id="@+id/increaseTextButton"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

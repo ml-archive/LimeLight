@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recorder_content_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:gravity="right">
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:background="@color/translucent_gray"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/context_view"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/darker_gray">
+
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/time_slices"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="48dp"
+                    android:clipChildren="false"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/middleButtonBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:contentDescription="Skip back"
+                android:src="@drawable/control_dark_rewind"
+                android:scaleType="centerInside"
+                style="@style/Widget.AppCompat.ActionButton"/>
+
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/play"
+                android:src="@drawable/control_dark_play"
+                android:scaleType="centerInside"
+                style="@style/Widget.AppCompat.ActionButton"/>
+
+
+            <ImageButton
+                android:id="@+id/forward"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:contentDescription="Skip forward"
+                android:src="@drawable/control_dark_fastforward"
+                android:scaleType="centerInside"
+                style="@style/Widget.AppCompat.ActionButton"/>
+
+            <ImageButton
+                android:id="@+id/menu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/list_dark"
+                android:scaleType="centerInside"
+                style="@style/Widget.AppCompat.ActionButton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/record"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/edit"
+                android:tag="@string/edit"
+                android:src="@drawable/dark_edit"
+                android:scaleType="centerInside"
+                android:visibility="visible"
+                android:background="@drawable/crossfade_button"
+                style="@style/Widget.AppCompat.ActionButton"/>
+
+            <ImageButton
+                android:id="@+id/add"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/page_dark_add"
+                android:scaleType="centerInside"
+                android:visibility="visible"
+                style="@style/Widget.AppCompat.ActionButton"/>
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/page_dark_delete"
+                android:scaleType="centerInside"
+                android:visibility="visible"
+                style="@style/Widget.AppCompat.ActionButton"/>
+
+            <ImageButton
+                android:id="@+id/font"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/text_dark_size"
+                android:scaleType="centerInside"
+                android:visibility="visible"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:adjustViewBounds="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_height="148dp"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:background="@color/translucent_gray">
+        <ImageButton
+            android:id="@+id/hide_button"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:scaleType="centerInside"
+            android:src="@drawable/chevron_right"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:background="@color/dark_green"/>
+        </FrameLayout>
+</LinearLayout>
