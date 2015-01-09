@@ -7,7 +7,7 @@ Author: Fuzz Productions
 ##Introduction
 _________________________________________________________
 
-LimeLight is a help authoring tool for Android applications. It creates interactable and context-driven help systems to guide users.
+LimeLight is a different kind of help creation tool for Android applications. It creates interactable and context-driven help systems to guide users.
 
 ##Note
 _________________________________________________________
