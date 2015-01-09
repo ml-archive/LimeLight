@@ -19,7 +19,7 @@ _________________________________________________________
 ####Add to your application:
     
 Include it in your project as a library and then modify the following methods in your main activity:
-
+``` java
         @Override
         protected void onResume() {
             super.onResume();
@@ -43,11 +43,14 @@ Include it in your project as a library and then modify the following methods in
             LimeLight.onCreateOptionsMenu(this, menu);
             return super.onCreateOptionsMenu(menu);
         }  
-        
+```
 Run the application, and LimeLight's UI menu should appear on top.
 
-#####For More Information
+#####For More Information and Advanced Uses
 Refer to wiki at https://github.com/fuzz-productions/LimeLight/wiki
 
 ##License
-	This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0, as well as to the Additional Term regarding proper attribution. The latter is located in Term 11 of the License. If a copy of the MPL with the Additional Term was not distributed with this file, You can obtain one at http://static.fuzzhq.com/licenses/MPL
+	This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0, as well as to the
+	Additional Term regarding proper attribution. The latter is located in Term 11 of the License. If a
+	copy of the MPL with the Additional Term was not distributed with this file, You can obtain one at
+	http://static.fuzzhq.com/licenses/MPL
