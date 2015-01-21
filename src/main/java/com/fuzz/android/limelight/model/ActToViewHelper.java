@@ -170,12 +170,15 @@ public class ActToViewHelper {
     }
 
     public static Animator getAnimationForAct(Act act) {
-        Animator animation = null;
+        Object animation = null;
+        Animator animator = null;
         String animationString = null;
-        if (act.getAnimationHolder() != null) {
-            animation = act.getAnimationHolder().getAnimation();
+        final AnimationHolder animationHolder = act.getAnimationHolder();
+        if (animationHolder != null) {
+            animation = animationHolder;
+            animator = animationHolder.getAnimation();
         } else {
-            act.getAnimation();
+            animationString = act.getAnimation();
         }
         if (animationString != null) {
             int animationID = 0;
@@ -191,8 +194,10 @@ public class ActToViewHelper {
                     Object anim = objectClass.newInstance();
                     if (anim instanceof Animator) {
                         animation = (Animator) anim;
+                        animator = animationHolder.getAnimation();
                     } else if (anim instanceof AnimationHolder) {
-                        animation = ((AnimationHolder) anim).getAnimation();
+                        animation = ((AnimationHolder) anim);
+                        animator = ((AnimationHolder) anim).getAnimation();
                     }
                 } catch (ClassNotFoundException e) {
                     e.printStackTrace();
@@ -204,7 +209,7 @@ public class ActToViewHelper {
             }
         }
         act.setAnimation(animation);
-        return animation;
+        return animator;
     }
 
     public static String getAnimationName(Act act) {
